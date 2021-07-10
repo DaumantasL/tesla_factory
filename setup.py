@@ -1,29 +1,15 @@
-from setuptools import setup
+from setuptools import find_packages, setup
 
-with open ("README.MD", "r") as fh:
-      long_description = fh.read()
+with open('README.md') as r:
+    readme = r.read()
 
-setup(name='tesla',
-      version='1.0',
-      description = 'Example package for Turing college exercise.',
-      py_modules=['factory'],
-      package_dir = {'': 'src'},
-
-      classifiers = {}, #searchability stuff
-
-      long_description = long_description,
-      long_description_content_type="text/markdown",
-
-      #install_requires = [], #dependencies for running package
-
-      #extras_require = { #dependencies for developing package
-      #      "dev": [
-      #            "pytest>=3.7",
-      #            ],
-      #},
-
-      url = "",
-      author = "Daumantas Lipskis",
-      author_email = "",
-      
-      )
+setup(
+    name='pytest_examples',
+    version="0.0.1",
+    description='Reference package for unit tests',
+    long_description=readme,
+    packages=find_packages(exclude=('tests')),
+    install_requires=[
+        
+    ],
+)
