@@ -4,7 +4,7 @@ with open('README.md') as r:
     readme = r.read()
 
 setup(
-    name='pytest_examples',
+    name='tesla',
     version="0.0.1",
     description='Reference package for unit tests',
     long_description=readme,
