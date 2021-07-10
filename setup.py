@@ -1,4 +1,4 @@
-from setuptools import setup
+from distutils.core import setup
 
 with open ("README.MD", "r") as fh:
       long_description = fh.read()
